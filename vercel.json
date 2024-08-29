@@ -28,7 +28,7 @@
       ]
     },
     {
-      "source": "http://159.75.169.224:5500",
+      "source": "http://159.75.169.224:5500/(.*)",
       "headers": [
         {
           "key": "Access-Control-Allow-Credentials",
