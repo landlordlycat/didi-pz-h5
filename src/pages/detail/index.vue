@@ -94,8 +94,8 @@ const stateMap = {
 }
 
 const state = computed(() => {
-  const state = orderDetailList.value?.trade_state
-  return stateMap[state]
+  // return stateMap[orderDetailList.value.trade_state] || 40
+  return 40
 })
 
 const onClickPay = async () => {
