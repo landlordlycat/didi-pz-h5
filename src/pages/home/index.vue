@@ -13,12 +13,12 @@
   <section v-if="homeData">
     <van-swipe height="180" :autoplay="3000" lazy-render>
       <van-swipe-item class="p-2" v-for="image in homeData?.slides" :key="image.id">
-        <van-image radius="10" :src="image.pic_image_url" class="object-contain" />
+        <van-image radius="10" :src="image?.pic_image_url" class="object-contain" />
       </van-swipe-item>
     </van-swipe>
     <van-row justify="space-around">
       <van-col v-for="(item, i) in homeData?.nav2s" span="11" :key="item.id">
-        <van-image radius="5" :src="item.pic_image_url" class="object-contain" @click="goOrderTwo(i)" />
+        <van-image radius="5" :src="item?.pic_image_url" class="object-contain" @click="goOrderTwo(i)" />
       </van-col>
     </van-row>
     <van-row @click="goOrder(item)" class="border-t border-gray-200 mb-2 p-1" v-for="item in homeData?.hospitals" justify="space-around" :key="item.id">
@@ -28,7 +28,7 @@
       <van-col span="15">
         <div class="text-lg font-bold">{{ item?.name }}</div>
         <span class="text-blue-600">{{ item?.rank }} {{ item?.label }}</span>
-        <p class="line-clamp-2">{{ item.intro }}</p>
+        <p class="line-clamp-2">{{ item?.intro }}</p>
       </van-col>
     </van-row>
   </section>
