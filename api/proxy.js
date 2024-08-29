@@ -3,7 +3,7 @@
 import { createProxyMiddleware } from 'http-proxy-middleware'
 
 export default (req, res) => {
-  let target = ''
+  let target = 'https://didi-pz-h5.vercel.app'
   // 代理目标地址
   // xxxxx 替换为你跨域请求的服务器 如： http://baidu.com
   if (req.url.startsWith('/v3pz')) {
