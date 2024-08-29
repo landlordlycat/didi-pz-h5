@@ -4,7 +4,7 @@ import { getItem, removeItem } from '@/utils/localStorage'
 import router from '@/router'
 import { State } from '@/states'
 const instance = axios.create({
-  baseURL: 'https:/v3pz.itndedu.com/v3pz',
+  baseURL: '/v3pz',
   timeout: 10000,
   headers: {
     terminal: State.TERMINAL

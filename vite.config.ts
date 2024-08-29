@@ -10,7 +10,14 @@ import { VantResolver } from '@vant/auto-import-resolver'
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    port: 3000
+    proxy: {
+      '/v3pz': {
+        target: 'https://v3pz.itndedu.com',
+        secure: false,
+        changeOrigin: true
+        // rewrite: (path) => path.replace(/^\/v3pz/, '')
+      }
+    }
   },
   plugins: [
     vue(),
