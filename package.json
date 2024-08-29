@@ -34,6 +34,7 @@
     "axios": "^1.7.5",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
+    "less": "^4.2.0",
     "npm-run-all2": "^6.2.0",
     "postcss": "^8.4.41",
     "prettier": "^3.2.5",
